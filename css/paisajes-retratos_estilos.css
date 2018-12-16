@@ -1,0 +1,32 @@
+.contenedor-galeria {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background: #d5c75f;
+	padding: 20px;
+}
+
+.contenedor-galeria img {
+	width: 30%;
+	height: 250px;
+	margin: 10px;
+}
+
+.contenedor-galeria img:nth-child(1) {
+	filter: blur(10px);
+}
+
+.contenedor-galeria img:nth-child(even) {
+	filter: grayscale(100%);
+}
+
+.contenedor-galeria img:nth-child(3) {
+	filter: sepia(100%);
+}
+
+/* -------------------- Mediaqueries -------------------- */
+@media screen and (max-width: 900px) {
+	.contenedor-galeria img {
+		width: 80%;
+	}
+}
